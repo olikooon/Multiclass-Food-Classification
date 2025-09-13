@@ -1,0 +1,1 @@
+src/model/vit_food_101.pth filter=lfs diff=lfs merge=lfs -text
