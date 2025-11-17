@@ -4,16 +4,16 @@ The project is dedicated to the development of a computer vision model capable o
 
 Several methods were used throughout the project:
 
-A simple CNN model (accuracy - 44%)
+- A simple CNN model (accuracy - 44%)
 
-A CNN model based on the EfficientNet architecture (accuracy - 58%)
+-  CNN model based on the EfficientNet architecture (accuracy - 58%)
 
-Vision Transformers (accuracy - 75%)
+- Vision Transformers (accuracy - 75%)
 
-Improved Vision Transformers (accuracy - 87%)
+- Improved Vision Transformers (accuracy - 87%)
 
 However, the truly significant results with Transformers were achieved thanks to:
 
-Advanced augmentation, which creates complex training data.
+- Advanced augmentation, which creates complex training data.
 
-A partially unfrozen ViT for efficient data training
+- A partially unfrozen ViT for efficient data training
