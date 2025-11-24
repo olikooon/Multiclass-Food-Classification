@@ -1,6 +1,7 @@
 from aiogram.fsm.state import StatesGroup, State
 
 
+# State for registration
 class RegStates(StatesGroup):
     gender = State()
     age = State()
@@ -11,6 +12,7 @@ class RegStates(StatesGroup):
     ready = State()
 
 
+# State for photo load
 class PhotoStates(StatesGroup):
     waiting_photo = State()
     confirm_prediction = State()

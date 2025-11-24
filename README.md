@@ -10,7 +10,7 @@ Several methods were used throughout the project:
 
 - Vision Transformers (accuracy - 75%)
 
-- Improved Vision Transformers (accuracy - 87%)
+- Improved Vision Transformers (accuracy - 86%)
 
 However, the truly significant results with Transformers were achieved thanks to:
 

@@ -1,5 +1,6 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
+# Keyboard for goal in registration
 goal = InlineKeyboardMarkup(
     inline_keyboard=[
         [
@@ -19,6 +20,7 @@ goal = InlineKeyboardMarkup(
     ]
 )
 
+# Keyboard for activity in registration
 activity = InlineKeyboardMarkup(
     inline_keyboard=[
         [
@@ -54,6 +56,7 @@ activity = InlineKeyboardMarkup(
     ]
 )
 
+# Keyboard for history in profile
 history = InlineKeyboardMarkup(
     inline_keyboard=[
         [InlineKeyboardButton(text="History by day", callback_data="history_by_days")]

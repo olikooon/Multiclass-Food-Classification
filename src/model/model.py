@@ -10,6 +10,7 @@ from torchvision import models, transforms
 logger = logging.getLogger(__name__)
 
 
+# Model like in ViT_improved
 class FoodClassificationService:
     def __init__(self, model_path: str, classes_path: str):
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')

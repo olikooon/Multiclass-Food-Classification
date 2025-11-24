@@ -23,6 +23,7 @@ logger = logging.getLogger(__name__)
 router = Router()
 
 
+# To cancel forms if user typo
 @router.message(Command("cancel"), StateFilter("*"))
 async def cancel_handler(msg: Message, state: FSMContext):
     current_state = await state.get_state()
@@ -46,6 +47,7 @@ async def handle_document(message: Message):
                              parse_mode=ParseMode.HTML)
 
 
+# Uses formula of the Mifflin-St Jeor to calculate kcal per day
 @router.message(Command('profile'))
 async def cmd_profile(msg: Message, session: AsyncSession):
     user = await get_user(session, msg.from_user.id)
@@ -77,6 +79,7 @@ async def cmd_profile(msg: Message, session: AsyncSession):
     await msg.answer(text, reply_markup=kb.history)
 
 
+# Shows history of kcal day by day
 @router.callback_query(F.data == "history_by_days")
 async def show_history(callback, session: AsyncSession):
     meals = await get_meals(session, callback.from_user.id)

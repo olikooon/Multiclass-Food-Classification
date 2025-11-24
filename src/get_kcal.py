@@ -16,12 +16,13 @@ logger = logging.getLogger(__name__)
 
 SEARCH_URL = "https://api.nal.usda.gov/fdc/v1/foods/search"
 
-
+# Reads 101 class
 def load_food101_classes(path):
     with open(path, "r") as f:
         return [line.strip() for line in f.readlines()]
 
 
+# Getting all 101 classes of food in kcal per 100g
 def get_kcal_for_food(name: str):
     params = {
         "api_key": USDA_API_KEY,

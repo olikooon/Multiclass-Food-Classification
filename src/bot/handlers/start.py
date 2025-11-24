@@ -43,6 +43,7 @@ But you need to register first. Please indicate gender (m/f):
     await state.set_state(RegStates.gender)
 
 
+# Full logic of registration
 @start.message(RegStates.gender)
 async def validate_gender(msg: Message, state: FSMContext):
     gender = msg.text.strip().lower()

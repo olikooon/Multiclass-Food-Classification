@@ -18,11 +18,14 @@ logger = logging.getLogger(__name__)
 
 
 async def main():
+    # Create .db file if not exist
     await create_db()
+    # Checks for all 101 class is .db if not pars from USDA
     await get_kcal()
     logger.info("Starting Food Classifier Bot...")
     dp = Dispatcher()
 
+    # Middleware for working async session
     dp.update.middleware(DataBaseSession(session_pool=session_maker))
     dp.include_router(start)
     dp.include_router(router)
