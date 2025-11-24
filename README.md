@@ -17,3 +17,37 @@ However, the truly significant results with Transformers were achieved thanks to
 - Advanced augmentation, which creates complex training data.
 
 - A partially unfrozen ViT for efficient data training
+
+# Setup Instructions
+
+## 1. Prerequisites
+
+- Python 3.12+
+- Telegram Bot Token from [@BotFather](https://t.me/BotFather)
+- Api key from [USDA](https://fdc.nal.usda.gov/api-key-signup.html)
+
+## 2. Installation
+
+1. Clone the project with **GIT LFS**
+
+2. Create a virtual environment:
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. **Install dependencies**:
+
+```bash
+pip install -r requirements.txt
+```
+
+## 3. Configuration
+
+Create .env file in the project root like **.env.example**
+6. **Run**
+
+```bash
+python main.py
+```
