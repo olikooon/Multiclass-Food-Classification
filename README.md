@@ -46,7 +46,7 @@ pip install -r requirements.txt
 ## 3. Configuration
 
 Create .env file in the project root like **.env.example**
-6. **Run**
+## 4. **Run**
 
 ```bash
 python main.py
