@@ -1,4 +1,4 @@
-# Project Description.
+# Multiclass Food Classification, project description.
 
 The project is dedicated to the development of a computer vision model capable of automatically classifying food images into 101 categories. The final product is a Telegram bot. A user uploads a photo of a dish, and the system returns its name along with additional information, including characteristics and recommendations.
 

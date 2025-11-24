@@ -8,3 +8,4 @@ input/
 *.pdf
 .idea/
 output/*.pdf
+*.db
